@@ -187,9 +187,15 @@ public class Account extends APIResource implements HasId, MetadataStore<Account
 		this.transferSchedule = transferSchedule;
 	}
 
+	private <T extends HasId, TCol extends StripeCollectionInterface<T>> TCol inheritCollectionOptions(TCol collection) {
+		collection.setRequestOptions(this.getRequestOptions());
+		collection.setRequestParams(this.getRequestParams());
+		return collection;
+	}
+
 	public ExternalAccountCollection getExternalAccounts()
 	{
-		return externalAccounts;
+		return inheritCollectionOptions(externalAccounts);
 	}
 
 	public static Account create(Map<String, Object> params)
