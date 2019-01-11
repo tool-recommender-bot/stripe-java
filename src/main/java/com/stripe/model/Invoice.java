@@ -21,7 +21,7 @@ public class Invoice extends ApiResource implements MetadataStore<Invoice>, HasI
   Long amountDue;
   Long amountPaid;
   Long amountRemaining;
-  Long applicationFee;
+  Long applicationFeeAmount;
   Long attemptCount;
   Boolean attempted;
   Boolean autoAdvance;
@@ -60,7 +60,16 @@ public class Invoice extends ApiResource implements MetadataStore<Invoice>, HasI
   Long tax;
   BigDecimal taxPercent;
   Long total;
+  TransferData transferData;
   Long webhooksDeliveredAt;
+
+  /**
+   * The {@code applicationFee} attribute.
+   *
+   * @deprecated Prefer using the {@code applicationFeeAmount} attribute instead.
+   */
+  @Deprecated
+  Long applicationFee;
 
   /**
    * The {@code closed} attribute.
@@ -404,4 +413,11 @@ public class Invoice extends ApiResource implements MetadataStore<Invoice>, HasI
         instanceUrl(Invoice.class, this.getId())), params, Invoice.class, options);
   }
   // </editor-fold>
+
+  @Getter
+  @Setter
+  @EqualsAndHashCode(callSuper = false)
+  public static class TransferData extends StripeObject {
+    String destination;
+  }
 }

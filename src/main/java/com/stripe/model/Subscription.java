@@ -40,6 +40,7 @@ public class Subscription extends ApiResource implements MetadataStore<Subscript
   Long start;
   String status;
   BigDecimal taxPercent;
+  TransferData transferData;
   Long trialEnd;
   Long trialStart;
 
@@ -204,4 +205,11 @@ public class Subscription extends ApiResource implements MetadataStore<Subscript
         Subscription.class, options);
   }
   // </editor-fold>
+
+  @Getter
+  @Setter
+  @EqualsAndHashCode(callSuper = false)
+  public static class TransferData extends StripeObject {
+    String destination;
+  }
 }
