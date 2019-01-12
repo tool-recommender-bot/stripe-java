@@ -11,7 +11,6 @@ import com.stripe.model.Balance;
 import com.stripe.net.RequestOptions;
 import com.stripe.net.StripeResponse;
 
-import org.junit.Ignore;
 import org.junit.Test;
 
 public class RequestOptionsTest extends BaseStripeTest {
@@ -19,7 +18,7 @@ public class RequestOptionsTest extends BaseStripeTest {
   public void testApiVersion() throws StripeException {
     final RequestOptions options = RequestOptions.builder().build();
     assertEquals(Stripe.API_VERSION, options.getStripeVersion());
-    assertNull(options.getStripeVersionOnBehalfOf());
+    assertNull(options.getStripeVersionOverride());
 
     final Balance balance = Balance.retrieve(options);
     final StripeResponse response = balance.getLastResponse();
