@@ -2,6 +2,7 @@ package com.stripe.model;
 
 import com.stripe.net.ApiResource;
 import java.util.List;
+import javax.annotation.Generated;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -9,6 +10,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @EqualsAndHashCode(callSuper = false)
+@Generated("com.stripe.generator.entity.SdkBuilder")
 public class LegalEntity extends StripeObject {
   /**
    * An array of any owners with at least 25% ownership of the company, excluding the individual

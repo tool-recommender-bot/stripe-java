@@ -5,7 +5,9 @@ import com.stripe.exception.StripeException;
 import com.stripe.net.ApiResource;
 import com.stripe.net.RequestOptions;
 import java.util.Map;
+import javax.annotation.Generated;
 
+@Generated("com.stripe.generator.entity.SdkBuilder")
 public class ExternalAccountCollection extends StripeCollection<ExternalAccount> {
   /** List external accounts for an account. */
   public ExternalAccountCollection list(Map<String, Object> params) throws StripeException {

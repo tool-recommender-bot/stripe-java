@@ -12,12 +12,14 @@ import com.stripe.exception.StripeException;
 import com.stripe.net.RequestOptions;
 import java.io.IOException;
 import java.util.Map;
+import javax.annotation.Generated;
 import lombok.Getter;
 
 /**
  * Creates type adapter for interface {@code ExternalAccount} able to deserialize raw JSON to
  * subtype implementation based on discriminator field {@code object}.
  */
+@Generated("com.stripe.generator.entity.SdkBuilder")
 public class ExternalAccountTypeAdapterFactory implements TypeAdapterFactory {
   @SuppressWarnings("unchecked")
   @Override

@@ -1,6 +1,7 @@
 package com.stripe.model.issuing;
 
 import com.stripe.model.StripeObject;
+import javax.annotation.Generated;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -8,6 +9,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @EqualsAndHashCode(callSuper = false)
+@Generated("com.stripe.generator.entity.SdkBuilder")
 public class MerchantData extends StripeObject {
   /**
    * A categorization of the seller's type of business. See our [merchant categories

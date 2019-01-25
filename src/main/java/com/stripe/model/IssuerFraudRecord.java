@@ -5,6 +5,7 @@ import com.stripe.exception.StripeException;
 import com.stripe.net.ApiResource;
 import com.stripe.net.RequestOptions;
 import java.util.Map;
+import javax.annotation.Generated;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -12,6 +13,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @EqualsAndHashCode(callSuper = false)
+@Generated("com.stripe.generator.entity.SdkBuilder")
 public class IssuerFraudRecord extends ApiResource implements HasId {
   /**
    * An IFR is actionable if it has not received a dispute and has not been fully refunded. You may

@@ -6,10 +6,12 @@ import com.stripe.model.ExternalAccountTypeAdapterFactory;
 import com.stripe.model.PaymentSourceTypeAdapterFactory;
 import java.util.ArrayList;
 import java.util.List;
+import javax.annotation.Generated;
 
 /**
  * Provider for all {@link TypeAdapterFactory} required for deserializing subtypes of an interface.
  */
+@Generated("com.stripe.generator.entity.SdkBuilder")
 final class ApiResourceTypeAdapterFactoryProvider {
   private static final List<TypeAdapterFactory> factories = new ArrayList<>();
 

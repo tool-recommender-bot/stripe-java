@@ -6,6 +6,7 @@ import com.stripe.net.ApiResource;
 import com.stripe.net.RequestOptions;
 import java.math.BigDecimal;
 import java.util.Map;
+import javax.annotation.Generated;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -13,6 +14,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @EqualsAndHashCode(callSuper = false)
+@Generated("com.stripe.generator.entity.SdkBuilder")
 public class Coupon extends ApiResource implements HasId, MetadataStore<Coupon> {
   /**
    * Amount (in the `currency` specified) that will be taken off the subtotal of any invoices for

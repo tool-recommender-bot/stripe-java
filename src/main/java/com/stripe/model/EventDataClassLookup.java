@@ -18,11 +18,13 @@ import com.stripe.model.terminal.Location;
 import com.stripe.model.terminal.Reader;
 import java.util.HashMap;
 import java.util.Map;
+import javax.annotation.Generated;
 
 /**
  * Event data class look up used in {@link EventDataDeserializer}. The key to look up is `object`
  * string of the model.
  */
+@Generated("com.stripe.generator.entity.SdkBuilder")
 final class EventDataClassLookup {
   private static final Map<String, Class<? extends StripeObject>> classLookup = new HashMap<>();
 

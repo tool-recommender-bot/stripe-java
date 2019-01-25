@@ -9,12 +9,14 @@ import com.google.gson.reflect.TypeToken;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import javax.annotation.Generated;
 import lombok.Getter;
 
 /**
  * Creates type adapter for interface {@code PaymentSource} able to deserialize raw JSON to subtype
  * implementation based on discriminator field {@code object}.
  */
+@Generated("com.stripe.generator.entity.SdkBuilder")
 public class PaymentSourceTypeAdapterFactory implements TypeAdapterFactory {
   @SuppressWarnings("unchecked")
   @Override

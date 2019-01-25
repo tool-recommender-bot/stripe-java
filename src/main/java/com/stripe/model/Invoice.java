@@ -7,6 +7,7 @@ import com.stripe.net.RequestOptions;
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.Map;
+import javax.annotation.Generated;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -14,6 +15,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @EqualsAndHashCode(callSuper = false)
+@Generated("com.stripe.generator.entity.SdkBuilder")
 public class Invoice extends ApiResource implements HasId, MetadataStore<Invoice> {
   /**
    * Final amount due at this time for this invoice. If the invoice's total is smaller than the

@@ -6,6 +6,7 @@ import com.stripe.net.ApiResource;
 import com.stripe.net.RequestOptions;
 import java.util.List;
 import java.util.Map;
+import javax.annotation.Generated;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -13,6 +14,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @EqualsAndHashCode(callSuper = false)
+@Generated("com.stripe.generator.entity.SdkBuilder")
 public class CountrySpec extends ApiResource implements HasId {
   /**
    * The default currency for this country. This applies to both payment methods and bank accounts.

@@ -7,6 +7,7 @@ import com.stripe.model.MetadataStore;
 import com.stripe.net.ApiResource;
 import com.stripe.net.RequestOptions;
 import java.util.Map;
+import javax.annotation.Generated;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -14,6 +15,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @EqualsAndHashCode(callSuper = false)
+@Generated("com.stripe.generator.entity.SdkBuilder")
 public class Settlement extends ApiResource implements HasId, MetadataStore<Settlement> {
   /** The Bank Identification Number reflecting this settlement record. */
   String bin;

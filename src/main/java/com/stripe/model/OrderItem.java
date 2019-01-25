@@ -1,6 +1,7 @@
 package com.stripe.model;
 
 import com.stripe.net.ApiResource;
+import javax.annotation.Generated;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -8,6 +9,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @EqualsAndHashCode(callSuper = false)
+@Generated("com.stripe.generator.entity.SdkBuilder")
 public class OrderItem extends StripeObject {
   /**
    * A positive integer in the smallest currency unit (that is, 100 cents for $1.00, or 1 for ¥1,

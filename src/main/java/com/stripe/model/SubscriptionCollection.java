@@ -5,7 +5,9 @@ import com.stripe.exception.StripeException;
 import com.stripe.net.ApiResource;
 import com.stripe.net.RequestOptions;
 import java.util.Map;
+import javax.annotation.Generated;
 
+@Generated("com.stripe.generator.entity.SdkBuilder")
 public class SubscriptionCollection extends StripeCollection<Subscription> {
   /**
    * You can see a list of the customer’s active subscriptions. Note that the 10 most recent active

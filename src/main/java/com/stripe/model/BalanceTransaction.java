@@ -7,6 +7,7 @@ import com.stripe.net.RequestOptions;
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.Map;
+import javax.annotation.Generated;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -14,6 +15,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @EqualsAndHashCode(callSuper = false)
+@Generated("com.stripe.generator.entity.SdkBuilder")
 public class BalanceTransaction extends ApiResource implements HasId {
   /** Gross amount of the transaction, in %s. */
   Long amount;

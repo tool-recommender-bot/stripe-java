@@ -5,7 +5,9 @@ import com.stripe.exception.StripeException;
 import com.stripe.net.ApiResource;
 import com.stripe.net.RequestOptions;
 import java.util.Map;
+import javax.annotation.Generated;
 
+@Generated("com.stripe.generator.entity.SdkBuilder")
 public class FeeRefundCollection extends StripeCollection<FeeRefund> {
   /**
    * Refunds an application fee that has previously been collected but not yet refunded. Funds will

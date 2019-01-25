@@ -11,6 +11,7 @@ import com.stripe.net.ApiResource;
 import com.stripe.net.RequestOptions;
 import java.util.List;
 import java.util.Map;
+import javax.annotation.Generated;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -18,6 +19,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @EqualsAndHashCode(callSuper = false)
+@Generated("com.stripe.generator.entity.SdkBuilder")
 public class Authorization extends ApiResource
     implements BalanceTransactionSource, MetadataStore<Authorization> {
   /** Whether the authorization has been approved. */

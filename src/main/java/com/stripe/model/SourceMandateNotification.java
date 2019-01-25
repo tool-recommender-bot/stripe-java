@@ -1,5 +1,6 @@
 package com.stripe.model;
 
+import javax.annotation.Generated;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -7,6 +8,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @EqualsAndHashCode(callSuper = false)
+@Generated("com.stripe.generator.entity.SdkBuilder")
 public class SourceMandateNotification extends StripeObject implements HasId {
   /**
    * A positive integer in the smallest currency unit (that is, 100 cents for $1.00, or 1 for ¥1,

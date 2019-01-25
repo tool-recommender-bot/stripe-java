@@ -1,5 +1,6 @@
 package com.stripe.model;
 
+import javax.annotation.Generated;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -7,6 +8,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @EqualsAndHashCode(callSuper = false)
+@Generated("com.stripe.generator.entity.SdkBuilder")
 public class BitcoinTransaction extends StripeObject implements BalanceTransactionSource {
   /** The amount of `currency` that the transaction was converted to in real-time. */
   Long amount;

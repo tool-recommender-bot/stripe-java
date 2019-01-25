@@ -2,6 +2,7 @@ package com.stripe.model;
 
 import com.stripe.net.ApiResource;
 import java.util.Map;
+import javax.annotation.Generated;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -9,6 +10,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @EqualsAndHashCode(callSuper = false)
+@Generated("com.stripe.generator.entity.SdkBuilder")
 public class AlipayAccount extends StripeObject implements PaymentSource {
   /** Time at which the object was created. Measured in seconds since the Unix epoch. */
   Long created;

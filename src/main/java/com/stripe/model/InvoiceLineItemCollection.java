@@ -5,7 +5,9 @@ import com.stripe.exception.StripeException;
 import com.stripe.net.ApiResource;
 import com.stripe.net.RequestOptions;
 import java.util.Map;
+import javax.annotation.Generated;
 
+@Generated("com.stripe.generator.entity.SdkBuilder")
 public class InvoiceLineItemCollection extends StripeCollection<InvoiceLineItem> {
   /**
    * When retrieving an invoice, you’ll get a <strong>lines</strong> property containing the total

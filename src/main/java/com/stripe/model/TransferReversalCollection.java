@@ -5,7 +5,9 @@ import com.stripe.exception.StripeException;
 import com.stripe.net.ApiResource;
 import com.stripe.net.RequestOptions;
 import java.util.Map;
+import javax.annotation.Generated;
 
+@Generated("com.stripe.generator.entity.SdkBuilder")
 public class TransferReversalCollection extends StripeCollection<TransferReversal> {
   /**
    * When you create a new reversal, you must specify a transfer to create it on.

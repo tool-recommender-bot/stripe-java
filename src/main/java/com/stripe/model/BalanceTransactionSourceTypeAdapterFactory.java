@@ -11,12 +11,14 @@ import com.google.gson.stream.JsonWriter;
 import com.stripe.model.issuing.Authorization;
 import com.stripe.model.issuing.Transaction;
 import java.io.IOException;
+import javax.annotation.Generated;
 import lombok.Getter;
 
 /**
  * Creates type adapter for interface {@code BalanceTransactionSource} able to deserialize raw JSON
  * to subtype implementation based on discriminator field {@code object}.
  */
+@Generated("com.stripe.generator.entity.SdkBuilder")
 public class BalanceTransactionSourceTypeAdapterFactory implements TypeAdapterFactory {
   @SuppressWarnings("unchecked")
   @Override
